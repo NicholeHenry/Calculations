@@ -6,11 +6,33 @@ namespace Calculations
     {
         static void Main(string[] args)
         {
-            string percentResult = Percentage.PercentgeCalc();
-            Console.WriteLine(percentResult);
+            Console.WriteLine(" Please Choose an option: Area, Circumeference or Percentage");
 
-            string circumferenceResult = CircleCircumference.CircleCircumferenceCalc();
-            Console.WriteLine(circumferenceResult);
+            string option = Console.ReadLine();
+            option.ToLower();
+
+            if (option == "area")
+            {
+                string areaResult = Area.ChooseAreaCalc();
+                Console.WriteLine(areaResult);
+            }
+            
+            if(option == "circumferance")
+            {
+                string circumferenceResult = CircleCircumference.CircleCircumferenceCalc();
+                Console.WriteLine(circumferenceResult);
+            }
+
+            if (option == "percentage")
+            {
+                string percentResult = Percentage.PercentgeCalc();
+                Console.WriteLine(percentResult);
+            }
+
+            else
+            {
+                Console.WriteLine("That option does not exists");
+            }
         }
     }
 }
