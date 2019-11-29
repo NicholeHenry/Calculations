@@ -8,6 +8,9 @@ namespace Calculations
         {
             string percentResult = Percentage.PercentgeCalc();
             Console.WriteLine(percentResult);
+
+            string circumferenceResult = CircleCircumference.CircleCircumferenceCalc();
+            Console.WriteLine(circumferenceResult);
         }
     }
 }
