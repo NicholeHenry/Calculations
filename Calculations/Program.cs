@@ -6,7 +6,7 @@ namespace Calculations
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Please Choose an option: Area, Circumeference or Percentage");
+            Console.WriteLine(" Please Choose an option: Area, Circumference or Percentage");
 
             string option = Console.ReadLine();
             option.ToLower();
